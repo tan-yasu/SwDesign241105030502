@@ -9,6 +9,7 @@ Bài thực hành này nhằm:
  Nội dung
 
 1. Biểu đồ UML
+
  1.1 Biểu đồ lớp
 Đây là biểu đồ lớp mô tả quan hệ giữa các đối tượng trong hệ thống: ![Diagram](http://www.plantuml.com/plantuml/png/RP6_IWD14CRxUuef5SaB71RfH31fBjXlRjVTWSiitEv6HAqiH4GmXQLWI2SMAQoovOPxZtqJrpyUvvbolc_XzzkPeR6ijcvMPMN5Z86nRDRHFoDSPW07a_1AEHIsHf9Viul-2ND0if_ZzZ7wUmQbYlwk-wo8VW7R1KP_Is2LZfibTdkZzFandUcz_Hpc6dbsdVtW2oHrYeA-yQEm0fCIc6DFP2p3IyeJ-A7ivCaeGMzcO6j74gRXZLGENBjf9Nx1XNLSaDtDFq96yg-0nBXPaVplC0hlrBOy_V6YsvuqwsP9ia-V25OgKVVfxTeFhmQ3TWkzk9NBXe9ukja7)
 
