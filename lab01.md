@@ -1,4 +1,5 @@
 Phân Tích Kiến Trúc, Cơ Chế, và Ca Sử Dụng cho Payroll System
+
 Mục tiêu: Cung cấp phân tích kiến trúc và các ca sử dụng chính của hệ thống Payroll System nhằm đảm bảo tính chính xác và hiệu quả trong quản lý bảng chấm công và chi trả lương.
 
 1. Phân Tích Kiến Trúc
