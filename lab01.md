@@ -12,6 +12,8 @@ biểu đồ Package UML :
 
 
 ![Diagram](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuIf8JCvEJ4zLK0f8h2pApybH2AuiBadDLLAevb800hYqOq51JcPoOabcVfw2Js9bQX5O1HH4ksScvYkaP3xStPwda9T-RCF3tNCp5L8ExynBZmKhgWMJg2OwbHPdvgKM5oi4fnQLPIQd5cCnr-NXxkxa38MoXxkN0itD05bG0ER1ZAtbuiBcD5rTEpmMM2cuFzpT2tGWmdGkXzIy561u0000)
+
+
 2. Cơ Chế Phân Tích
 Các cơ chế chính để hỗ trợ nghiệp vụ của Payroll System bao gồm:
 
@@ -39,6 +41,8 @@ Biểu Đồ Lớp cho Ca Sử Dụng Payment :
 
 
 ![Diagram](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuKhEIImkLd3DBSZ9hqnDLQZcKb3GLSWzlDWlu_2YlB3Cmwloh1I2IueoyzB1CYNe0WKPnpOSMvYN7fBnSFVAv92CnBoCaFp32r4L7PduS7TteZDGIIU6QNxfG8iy3Y_8IqUHAdwuUsB8uGMPtXdv3tSjHXXN2tLnG69bSaPgSZR2nGYxCGtAVBYx4IZibfEVM0An6UYMkPdkcOb0KPV4abIukKw9UTd1bSKbgRbWaxN1AZScUm1DQCzppYYjVBYxEG_gA8rKQB1vki2ir558pCqlpIk1sgK9D1SUjag6IWgwkWfAMae8rrifb3pSjJ0VNP4TY4PsYnN87siLKXxkNWhqbqDgNWeeyW00)
+
+
 4. Phân Tích Ca Sử Dụng: Maintain Timecard
 Mô Tả Ca Sử Dụng
 Trong ca sử dụng này, Employee có thể ghi lại số giờ làm việc và các dự án liên quan trong bảng chấm công.
