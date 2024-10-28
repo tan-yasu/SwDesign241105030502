@@ -1,101 +1,46 @@
-@startuml
-actor Nhân_viên
-participant "Bộ_chọn_Phương_thức_Thanh_toán" as Selector
-participant "CSDL_Bảng_lương" as DB
+Phân Tích Kiến Trúc, Cơ Chế, và Ca Sử Dụng cho Payroll System
+Mục tiêu: Cung cấp phân tích kiến trúc và các ca sử dụng chính của hệ thống Payroll System nhằm đảm bảo tính chính xác và hiệu quả trong quản lý bảng chấm công và chi trả lương.
 
-Nhân_viên -> Selector : Chọn phương thức thanh toán
-Selector -> Nhân_viên : Hiển thị các tùy chọn thanh toán
-Nhân_viên -> Selector : Chọn "Gửi qua bưu điện" (hoặc "Chuyển khoản ngân hàng")
+1. Phân Tích Kiến Trúc
+1.1 Đề Xuất Kiến Trúc
+Kiến trúc của Payroll System được thiết kế dựa trên mô hình phân lớp nhằm đảm bảo tính linh hoạt và dễ dàng bảo trì. Hệ thống gồm hai lớp chính:
 
-alt Gửi qua bưu điện
-    Selector -> Nhân_viên : Yêu cầu địa chỉ
-    Nhân_viên -> Selector : Cung cấp địa chỉ
-end
-
-alt Chuyển khoản ngân hàng
-    Selector -> Nhân_viên : Yêu cầu thông tin ngân hàng
-    Nhân_viên -> Selector : Cung cấp tên ngân hàng và số tài khoản
-end
-
-Selector -> DB : Cập nhật phương thức thanh toán của Nhân viên
-DB -> Selector : Xác nhận cập nhật
-Selector -> Nhân_viên : Phương thức thanh toán đã được cập nhật
-@enduml
+Application Layer: Xử lý các yêu cầu từ người dùng và giao diện, bao gồm các lựa chọn phương thức thanh toán và chấm công.
+Business Services Layer: Thực hiện các quy trình nghiệp vụ chính, quản lý logic thanh toán và tính toán giờ làm.
+Lý do: Mô hình phân lớp giúp tách biệt rõ ràng giữa các phần khác nhau của hệ thống, giúp tăng tính ổn định và dễ bảo trì. Việc tách các lớp cũng giúp dễ dàng cập nhật hoặc thay thế một phần mà không ảnh hưởng đến các phần còn lại.
+biểu đồ Package UML : ![Diagram](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuIf8JCvEJ4zLK0f8h2pApybH2AuiBadDLLAevb800hYqOq51JcPoOabcVfw2Js9bQX5O1HH4ksScvYkaP3xStPwda9T-RCF3tNCp5L8ExynBZmKhgWMJg2OwbHPdvgKM5oi4fnQLPIQd5cCnr-NXxkxa38MoXxkN0itD05bG0ER1ZAtbuiBcD5rTEpmMM2cuFzpT2tGWmdGkXzIy561u0000)
 2. Cơ Chế Phân Tích
-Cơ chế đề xuất
-Các cơ chế chính cần được giải quyết trong bài toán này bao gồm:
+Các cơ chế chính để hỗ trợ nghiệp vụ của Payroll System bao gồm:
 
-Cơ chế xác thực nhân viên: Đảm bảo nhân viên phải đăng nhập trước khi thay đổi thông tin thanh toán.
-Cơ chế cập nhật phương thức thanh toán: Đảm bảo thông tin phương thức thanh toán của nhân viên được cập nhật chính xác.
-Cơ chế xác thực thông tin nhập: Đảm bảo các thông tin địa chỉ và ngân hàng được nhập đầy đủ và chính xác.
-3. Phân Tích Ca Sử Dụng "Chọn Phương Thức Thanh Toán"
-Biểu đồ Sequence cho "Chọn Phương Thức Thanh Toán"
-Dưới đây là biểu đồ Sequence mô tả luồng hoạt động của ca sử dụng "Chọn Phương Thức Thanh Toán".
-@startuml
-actor Nhân_viên
-participant "Bộ_chọn_Phương_thức_Thanh_toán" as Selector
-participant "CSDL_Bảng_lương" as DB
+Persistence (Lưu Trữ): Đảm bảo các thông tin quan trọng, như bảng chấm công và thanh toán, được lưu trữ an toàn và dễ dàng truy xuất.
+Security (Bảo Mật): Bảo vệ dữ liệu nhạy cảm của nhân viên và ngăn chặn truy cập trái phép vào hệ thống.
+Legacy Interface (Giao Diện Tích Hợp Hệ Thống Cũ): Tích hợp các hệ thống cũ như BankSystem và ProjectManagementDatabase để đảm bảo việc chuyển khoản và quản lý mã dự án diễn ra trơn tru.
+Giải thích: Cơ chế Persistence và Security giúp quản lý dữ liệu ổn định và an toàn, trong khi Legacy Interface đảm bảo hệ thống mới tương thích và có thể sử dụng dữ liệu từ các hệ thống cũ.
+3. Phân Tích Ca Sử Dụng: Select Payment Method
+Mô Tả Ca Sử Dụng
+Trong ca sử dụng này, Employee có thể chọn phương thức nhận thanh toán. Có ba phương thức chính:
 
-Nhân_viên -> Selector : Chọn phương thức thanh toán
-Selector -> Nhân_viên : Hiển thị các tùy chọn thanh toán
-Nhân_viên -> Selector : Chọn "Gửi qua bưu điện" (hoặc "Chuyển khoản ngân hàng")
+Nhận trực tiếp: Nhân viên nhận phiếu lương trực tiếp tại công ty.
+Gửi bưu điện: Phiếu lương được gửi qua bưu điện đến địa chỉ nhân viên cung cấp.
+Chuyển khoản: Thanh toán được chuyển trực tiếp vào tài khoản ngân hàng của nhân viên.
+Các Bước Phân Tích
+Khởi đầu: Nhân viên bắt đầu quy trình chọn phương thức thanh toán.
+Hiển thị Lựa Chọn: Hệ thống hiển thị ba phương thức thanh toán để nhân viên lựa chọn.
+Xử lý yêu cầu:
+Nếu chọn “nhận trực tiếp,” không cần thông tin bổ sung.
+Nếu chọn “gửi bưu điện,” hệ thống yêu cầu địa chỉ gửi.
+Nếu chọn “chuyển khoản,” hệ thống yêu cầu tên ngân hàng và số tài khoản.
+Cập nhật Thông Tin: Hệ thống lưu phương thức thanh toán của nhân viên vào hồ sơ cá nhân.
+Biểu Đồ Lớp cho Ca Sử Dụng Payment :  ![Diagram](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuKhEIImkLd3DBSZ9hqnDLQZcKb3GLSWzlDWlu_2YlB3Cmwloh1I2IueoyzB1CYNe0WKPnpOSMvYN7fBnSFVAv92CnBoCaFp32r4L7PduS7TteZDGIIU6QNxfG8iy3Y_8IqUHAdwuUsB8uGMPtXdv3tSjHXXN2tLnG69bSaPgSZR2nGYxCGtAVBYx4IZibfEVM0An6UYMkPdkcOb0KPV4abIukKw9UTd1bSKbgRbWaxN1AZScUm1DQCzppYYjVBYxEG_gA8rKQB1vki2ir558pCqlpIk1sgK9D1SUjag6IWgwkWfAMae8rrifb3pSjJ0VNP4TY4PsYnN87siLKXxkNWhqbqDgNWeeyW00)
+4. Phân Tích Ca Sử Dụng: Maintain Timecard
+Mô Tả Ca Sử Dụng
+Trong ca sử dụng này, Employee có thể ghi lại số giờ làm việc và các dự án liên quan trong bảng chấm công.
 
-alt Gửi qua bưu điện
-    Selector -> Nhân_viên : Yêu cầu địa chỉ
-    Nhân_viên -> Selector : Cung cấp địa chỉ
-end
-
-alt Chuyển khoản ngân hàng
-    Selector -> Nhân_viên : Yêu cầu thông tin ngân hàng
-    Nhân_viên -> Selector : Cung cấp tên ngân hàng và số tài khoản
-end
-
-Selector -> DB : Cập nhật phương thức thanh toán của Nhân viên
-DB -> Selector : Xác nhận cập nhật
-Selector -> Nhân_viên : Phương thức thanh toán đã được cập nhật
-@enduml
-Biểu đồ Class cho "Chọn Phương Thức Thanh Toán"
-Dưới đây là biểu đồ Class mô tả các lớp và quan hệ giữa chúng trong hệ thống.
-@startuml
-class Nhân_viên {
-  - mã_NV: int
-  - tên: String
-  - phương_thức_thanh_toán: Phương_thức_Thanh_toán
-  + chọnPhươngThứcThanhToán()
-}
-
-class Phương_thức_Thanh_toán {
-  <<abstract>>
-  + lấyChiTiết(): String
-}
-
-class Nhận_Tiền_Tại_Công_ty extends Phương_thức_Thanh_toán {
-  + lấyChiTiết(): String
-}
-
-class Gửi_Qua_Bưu_Điện extends Phương_thức_Thanh_toán {
-  - địa_chỉ: String
-  + lấyChiTiết(): String
-}
-
-class Chuyển_Khoản_Ngân_Hàng extends Phương_thức_Thanh_toán {
-  - tên_ngân_hàng: String
-  - số_tài_khoản: String
-  + lấyChiTiết(): String
-}
-
-class CSDL_Bảng_lương {
-  + cậpNhậtPhươngThứcThanhToán(mãNV: int, phương_thức: Phương_thức_Thanh_toán)
-}
-
-Nhân_viên --> Phương_thức_Thanh_toán
-Phương_thức_Thanh_toán <|-- Nhận_Tiền_Tại_Công_ty
-Phương_thức_Thanh_toán <|-- Gửi_Qua_Bưu_Điện
-Phương_thức_Thanh_toán <|-- Chuyển_Khoản_Ngân_Hàng
-Nhân_viên --> CSDL_Bảng_lương : cập nhật thông qua
-@enduml
-4. Hợp Nhất Kết Quả Phân Tích
-Hai ca sử dụng đã được phân tích và mô tả bằng biểu đồ Sequence và Class. Cơ chế cập nhật phương thức thanh toán đóng vai trò quan trọng trong hệ thống. Việc thiết kế theo kiến trúc phân lớp giúp dễ dàng mở rộng và bảo trì.
-
-5. Kết Luận
-Các cơ chế và lớp được phân tích trong hệ thống đáp ứng đầy đủ yêu cầu của bài toán "Payroll System". Hệ thống này có khả năng mở rộng, bảo trì tốt, và dễ dàng tích hợp các yêu cầu khác trong tương lai.
+Các Bước Phân Tích
+Khởi đầu: Nhân viên bắt đầu ghi giờ làm trên bảng chấm công.
+Hiển thị mã dự án: Hệ thống lấy danh sách mã dự án từ ProjectManagementDatabase và hiển thị cho nhân viên chọn.
+Ghi nhận giờ làm: Nhân viên chọn mã dự án và nhập số giờ làm cho từng ngày.
+Lưu và nộp bảng chấm công: Sau khi ghi đủ giờ làm, nhân viên nộp bảng chấm công và hệ thống xác thực dữ liệu, chuyển trạng thái bảng chấm công thành “đã nộp”.
+Biểu Đồ Lớp cho Ca Sử Dụng Maintain Timecard : ![Diagram](http://www.plantuml.com/plantuml/png/TL71IlD06BpdAJvoQlysX_yQIYbDHSHM18ltRRfiLh9VIx8z5F7W6tZr8BQM8WXI14-RWuVrHRutCMtQH0MlC_FDpCvsKiqIFLEn4yOiJU58JUF9d7EuTW0yK7Pr5jadl9Js1Nsuq8b4iMFqRs14PeKYYCYiLM3VKVZGbwbk3QNY8Kl6RUTcdt50genk4FpmGc4NyowPZVwy8_Cyyw77DA-eKp8VUXXP4tvZT49cYIA7bx9oAm9wbBtPsxpmW4rR1TM44zHSyAITYneW8daiANlesuMgxK8AwoQ8BUmVrFMT6YcxdzRgvPFEayaL3_M08HDSSTJvAHknjDYn0J6PzNnGzgZLz-CKLRRJbCEx_rtmF73_kTLGFgIKFK94sMRcbAZdjVyEBcvUOKpP6eNJuJZU_l8N)
+5. Hợp Nhất Kết Quả Phân Tích
+Trong hệ thống Payroll, cả hai ca sử dụng đều lấy Employee làm trung tâm. Các lớp Employee, Timecard, và Paycheck liên kết chặt chẽ, đảm bảo hệ thống có thể quản lý thông tin bảng chấm công và thanh toán chính xác. Kết quả hợp nhất giúp đảm bảo dữ liệu giữa các quy trình được đồng bộ và quản lý tập trung.
