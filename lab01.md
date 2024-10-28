@@ -34,6 +34,7 @@ Nếu chọn “nhận trực tiếp,” không cần thông tin bổ sung.
 Nếu chọn “gửi bưu điện,” hệ thống yêu cầu địa chỉ gửi.
 Nếu chọn “chuyển khoản,” hệ thống yêu cầu tên ngân hàng và số tài khoản.
 Cập nhật Thông Tin: Hệ thống lưu phương thức thanh toán của nhân viên vào hồ sơ cá nhân.
+
 Biểu Đồ Lớp cho Ca Sử Dụng Payment :
 
 
@@ -47,9 +48,13 @@ Khởi đầu: Nhân viên bắt đầu ghi giờ làm trên bảng chấm công
 Hiển thị mã dự án: Hệ thống lấy danh sách mã dự án từ ProjectManagementDatabase và hiển thị cho nhân viên chọn.
 Ghi nhận giờ làm: Nhân viên chọn mã dự án và nhập số giờ làm cho từng ngày.
 Lưu và nộp bảng chấm công: Sau khi ghi đủ giờ làm, nhân viên nộp bảng chấm công và hệ thống xác thực dữ liệu, chuyển trạng thái bảng chấm công thành “đã nộp”.
+
 Biểu Đồ Lớp cho Ca Sử Dụng Maintain Timecard :
 
 
 ![Diagram](http://www.plantuml.com/plantuml/png/TL71IlD06BpdAJvoQlysX_yQIYbDHSHM18ltRRfiLh9VIx8z5F7W6tZr8BQM8WXI14-RWuVrHRutCMtQH0MlC_FDpCvsKiqIFLEn4yOiJU58JUF9d7EuTW0yK7Pr5jadl9Js1Nsuq8b4iMFqRs14PeKYYCYiLM3VKVZGbwbk3QNY8Kl6RUTcdt50genk4FpmGc4NyowPZVwy8_Cyyw77DA-eKp8VUXXP4tvZT49cYIA7bx9oAm9wbBtPsxpmW4rR1TM44zHSyAITYneW8daiANlesuMgxK8AwoQ8BUmVrFMT6YcxdzRgvPFEayaL3_M08HDSSTJvAHknjDYn0J6PzNnGzgZLz-CKLRRJbCEx_rtmF73_kTLGFgIKFK94sMRcbAZdjVyEBcvUOKpP6eNJuJZU_l8N)
+
+
+
 5. Hợp Nhất Kết Quả Phân Tích
 Trong hệ thống Payroll, cả hai ca sử dụng đều lấy Employee làm trung tâm. Các lớp Employee, Timecard, và Paycheck liên kết chặt chẽ, đảm bảo hệ thống có thể quản lý thông tin bảng chấm công và thanh toán chính xác. Kết quả hợp nhất giúp đảm bảo dữ liệu giữa các quy trình được đồng bộ và quản lý tập trung.
