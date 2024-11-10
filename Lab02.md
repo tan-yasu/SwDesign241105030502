@@ -79,3 +79,96 @@ Hệ thống cập nhật thông tin thanh toán của nhân viên.
 
 
 ![Diagram](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuKhEIImkLl3BICmBoqpDKwZcKW02NONSH9YGbK9mIL5cNZfKeY2ZD3ylFIIZD3a4g20Z93yHg280Kn2iN5iXEIC_3uki1i8OhBerhHJAyZDJk6gve0x4L8FiLeGiccjBKlDmo6ahv2HMXcI0f3Bp4ExIX2a2MGqF5LrTEwn-T4ZDIm458W00)
+
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+// Lớp Employee
+class Employee {
+    private String maNhanVien;
+    private String ten;
+    private List<Timecard> bangChamCong;
+
+    public Employee(String maNhanVien, String ten) {
+        this.maNhanVien = maNhanVien;
+        this.ten = ten;
+        this.bangChamCong = new ArrayList<>();
+    }
+
+    public void themBangChamCong(Timecard timecard) {
+        bangChamCong.add(timecard);
+    }
+
+    public List<Timecard> getBangChamCong() {
+        return bangChamCong;
+    }
+
+    // Các phương thức getter và setter khác nếu cần
+}
+
+// Lớp Timecard
+class Timecard {
+    private String maBCC;
+    private Date ngayBatDau;
+    private Date ngayKetThuc;
+    private String trangThai;
+    private Map<String, Integer> maDuAn;
+
+    public Timecard(String maBCC, Date ngayBatDau, Date ngayKetThuc, String trangThai) {
+        this.maBCC = maBCC;
+        this.ngayBatDau = ngayBatDau;
+        this.ngayKetThuc = ngayKetThuc;
+        this.trangThai = trangThai;
+        this.maDuAn = new HashMap<>();
+    }
+
+    public void ghiGioLam(Date ngay, int gio) {
+        maDuAn.put(ngay.toString(), gio);
+    }
+
+    public void nop() {
+        System.out.println("Timecard " + maBCC + " đã nộp.");
+    }
+
+    // Các phương thức getter và setter khác nếu cần
+}
+
+// Lớp ProjectManagementDatabase
+class ProjectManagementDatabase {
+    public List<String> layMaDuAn() {
+        // Giả sử lấy danh sách mã dự án từ cơ sở dữ liệu quản lý dự án
+        List<String> maDuAnList = new ArrayList<>();
+        maDuAnList.add("DA01");
+        maDuAnList.add("DA02");
+        maDuAnList.add("DA03");
+        return maDuAnList;
+    }
+}
+
+// Lớp mô phỏng chức năng Maintain Timecard
+public class MaintainTimecardDemo {
+    public static void main(String[] args) {
+        Employee nhanVien = new Employee("NV01", "Nguyen Van A");
+
+        Timecard timecard = new Timecard("BCC01", new Date(), new Date(), "Chưa nộp");
+
+        // Ghi giờ làm
+        timecard.ghiGioLam(new Date(), 8);
+
+        // Nộp Timecard
+        timecard.nop();
+
+        // Thêm Timecard vào danh sách chấm công của nhân viên
+        nhanVien.themBangChamCong(timecard);
+
+        // Truy cập vào cơ sở dữ liệu quản lý dự án
+        ProjectManagementDatabase db = new ProjectManagementDatabase();
+        List<String> danhSachDuAn = db.layMaDuAn();
+
+        System.out.println("Danh sách mã dự án: " + danhSachDuAn);
+    }
+}
