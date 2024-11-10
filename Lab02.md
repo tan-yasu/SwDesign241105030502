@@ -17,8 +17,7 @@ Quản trị viên chọn chức năng (Thêm, Cập nhật, Xóa nhân viên).
 Cung cấp thông tin yêu cầu.
 Hệ thống thực hiện chức năng tương ứng.
 
-![Diagram](http//www.plantuml.com/plantuml/png/ZP2n2i8m443tVCMDIkaFE4Z1LGInT3_IqZjeBz8aOX7_tGX9m7GnuxkNuoMDTRWuFqzAJsWjN0Ybuq7WfI2S6cPCw00tjx2CSK2ctR2UyKHSG4rUT_u7LZ3XsfAHiML9-tVxxBnLpBbwbFDQH5NWQ9ZpDSbz2OL53yDzb3NUmy3zxJyDPdVx-kI6n2Akhezvese6wR-_-W40)
-
+![Diagram](http://www.plantuml.com/plantuml/png/ZP2n2i8m443tVCMDIkaFE4Z1LGInT3_IqZjeBz8aOX7_tGX9m7GnuxkNuoMDTRWuFqzAJsWjN0Ybuq7WfI2S6cPCw00tjx2CSK2ctR2UyKHSG4rUT_u7LZ3XsfAHiML9-tVxxBnLpBbwbFDQH5NWQ9ZpDSbz2OL53yDzb3NUmy3zxJyDPdVx-kI6n2Akhezvese6wR-_-W40)
 
 
 
