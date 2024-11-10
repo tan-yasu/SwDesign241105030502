@@ -87,7 +87,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// Lớp Employee
 class Employee {
     private String maNhanVien;
     private String ten;
@@ -106,11 +105,8 @@ class Employee {
     public List<Timecard> getBangChamCong() {
         return bangChamCong;
     }
-
-    // Các phương thức getter và setter khác nếu cần
 }
 
-// Lớp Timecard
 class Timecard {
     private String maBCC;
     private Date ngayBatDau;
@@ -128,19 +124,17 @@ class Timecard {
 
     public void ghiGioLam(Date ngay, int gio) {
         maDuAn.put(ngay.toString(), gio);
+        System.out.println("Đã ghi " + gio + " giờ làm việc cho ngày " + ngay);
     }
 
     public void nop() {
-        System.out.println("Timecard " + maBCC + " đã nộp.");
+        this.trangThai = "Đã nộp";
+        System.out.println("Timecard " + maBCC + " đã được nộp.");
     }
-
-    // Các phương thức getter và setter khác nếu cần
 }
 
-// Lớp ProjectManagementDatabase
 class ProjectManagementDatabase {
     public List<String> layMaDuAn() {
-        // Giả sử lấy danh sách mã dự án từ cơ sở dữ liệu quản lý dự án
         List<String> maDuAnList = new ArrayList<>();
         maDuAnList.add("DA01");
         maDuAnList.add("DA02");
@@ -149,23 +143,15 @@ class ProjectManagementDatabase {
     }
 }
 
-// Lớp mô phỏng chức năng Maintain Timecard
 public class MaintainTimecardDemo {
     public static void main(String[] args) {
         Employee nhanVien = new Employee("NV01", "Nguyen Van A");
-
         Timecard timecard = new Timecard("BCC01", new Date(), new Date(), "Chưa nộp");
 
-        // Ghi giờ làm
         timecard.ghiGioLam(new Date(), 8);
-
-        // Nộp Timecard
         timecard.nop();
-
-        // Thêm Timecard vào danh sách chấm công của nhân viên
         nhanVien.themBangChamCong(timecard);
 
-        // Truy cập vào cơ sở dữ liệu quản lý dự án
         ProjectManagementDatabase db = new ProjectManagementDatabase();
         List<String> danhSachDuAn = db.layMaDuAn();
 
