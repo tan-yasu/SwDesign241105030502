@@ -69,4 +69,59 @@ II.Analysis class to design element map
 | Employee                      | Employee (Entity Class)                | Lớp đại diện cho nhân viên, giữ nguyên từ phân tích sang thiết kế.             |
 | ProjectData                   | ProjectData (Entity Class)             | Lớp lưu trữ thông tin chi tiết về các dự án của nhân viên.                     |
 
+III Design Element to Owning Package Map
+
+## BankSystem
+
+| **Design Element**      | **Owning Package**   | **Giải thích**                                                                 |
+|--------------------------|----------------------|--------------------------------------------------------------------------------|
+| `PayrollController`      | `BankSystem.Control`| Được đặt trong package điều khiển (control) vì nó xử lý logic chính liên quan đến bảng lương. |
+| `IBankSystem`            | `BankSystem.Interface` | Được đặt trong package giao diện vì nó chỉ định các chức năng phải được triển khai. |
+| `BankSystem`             | `BankSystem.Implementation` | Lớp thực thi nằm trong package triển khai.                                     |
+| `Paycheck`               | `BankSystem.Entity` | Lớp đại diện dữ liệu nằm trong package thực thể.                              |
+| `BankInformation`        | `BankSystem.Entity` | Lớp lưu thông tin ngân hàng nằm trong package thực thể.                       |
+
+## PrintService
+
+| **Design Element**      | **Owning Package**         | **Giải thích**                                                                 |
+|--------------------------|----------------------------|--------------------------------------------------------------------------------|
+| `PayrollSystem`          | `PrintService.Control`    | Lớp chính điều khiển, được đặt trong package điều khiển.                      |
+| `IPrintService`          | `PrintService.Interface`  | Đặt trong package giao diện vì định nghĩa các chức năng in ấn.                 |
+| `PrintService`           | `PrintService.Implementation` | Đặt trong package triển khai vì thực thi các chức năng in ấn.                 |
+| `Employee`               | `PrintService.Entity`     | Lớp dữ liệu cho nhân viên thuộc package thực thể.                             |
+| `Paycheck`               | `PrintService.Entity`     | Lớp dữ liệu cho phiếu lương thuộc package thực thể.                           |
+
+## ProjectManagementDatabase
+
+| **Design Element**           | **Owning Package**             | **Giải thích**                                                                 |
+|-------------------------------|---------------------------------|--------------------------------------------------------------------------------|
+| `PayrollSystem`               | `ProjectManagement.Control`    | Lớp chính điều khiển thuộc package điều khiển.                                |
+| `IProjectManagementDatabase`  | `ProjectManagement.Interface` | Giao diện định nghĩa các chức năng quản lý dự án, thuộc package giao diện.    |
+| `ProjectManagementDatabase`   | `ProjectManagement.Implementation` | Lớp thực thi các chức năng quản lý dự án, thuộc package triển khai.          |
+| `Employee`                    | `ProjectManagement.Entity`     | Lớp dữ liệu đại diện cho nhân viên thuộc package thực thể.                   |
+| `ProjectData`                 | `ProjectManagement.Entity`     | Lớp dữ liệu lưu trữ thông tin dự án thuộc package thực thể.                  |
+
+
+IV Architectural layers and their dependencies
+
+
+![Diagram](http://www.plantuml.com/plantuml/png/VT0nJyCm40NWtR_YvBrYHrNKHB2nb8W9CHpE4rWaZl6T4G7ntyabS-l9p_wURDr9b8lMQNIPmmU_WNo_Y6AYjeJtg0XQ2ppzEbfNcASy9oIbv-Dnv0MbQQZDUOo1DSxfXLWiNyPTbPWWGZtALmoGhTB5dykLErQcDgnsnvQlwrSMxBHp9krBT3WqzWxTak-H1dh4PuMeU1DsOsAh6pbNbENcAG-is0vtPhlTTQRkln7g2lhp0raZGhpxSoUamKRg_W40)
+
+
+Application Layer
+
+Là tầng đầu tiên, nhận tất cả yêu cầu từ người dùng.
+Có thể bao gồm các giao diện đồ họa (GUI) hoặc giao diện dòng lệnh (CLI).
+Business Services Layer
+
+Chịu trách nhiệm thực thi toàn bộ logic nghiệp vụ của hệ thống, ví dụ: tính toán tiền lương, quản lý dự án.
+Phối hợp dữ liệu từ tầng Data Access và gửi lại kết quả cho Application.
+Data Access Layer
+
+Tầng trung gian giữa Business Services và Database.
+Thực hiện các tác vụ như xử lý giao tiếp với cơ sở dữ liệu hoặc các API bên ngoài.
+Database Layer
+
+Nơi lưu trữ dữ liệu.
+Hỗ trợ các hệ quản trị cơ sở dữ liệu như MySQL, PostgreSQL, hoặc Oracle DB.
 
