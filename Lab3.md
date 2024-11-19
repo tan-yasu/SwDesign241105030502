@@ -1,6 +1,6 @@
 I Subsystem context diagrams
 Hãy vẽ biểu đồ ngữ cảnh của các hệ thống con và giải thích.
-![Diagram](http://www.plantuml.com/plantuml/png/encoded-diagram-text)
+
 1 Biểu đồ cho hệ thống con Hệ thống Ngân hàng (BankSystem)
 
 
