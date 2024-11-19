@@ -4,6 +4,7 @@ Hãy vẽ biểu đồ ngữ cảnh của các hệ thống con và giải thíc
 1 Biểu đồ cho hệ thống con Hệ thống Ngân hàng (BankSystem)
 
 
+
 ![Diagram](http:////www.plantuml.com/plantuml/png/SoWkIImgAStDuKhEIImkLd1wk7lcaGcP3tStbdfd0AdcFAU7knRdfViSst1iOLwwGZMN0X2KP3pSlJ7P0oZVdkUSyN3NmaeKLHgQNBLSN9bv9Qb5QOd9gGgUxfc9-IvWrNxfXnVbUHnU03Sg_U7kjPaX80lpD99GhB9IG35K1sZhuIrvwI6PS4F0Ya8mHK7MG_tZ0RGq1EZQYNdfTBOQrGY863OTN5o4mbnNrmv745gX-46J2xigcnfTNUm1WKq3n49ar-DJXzL73gbvAQ0a1G00)
 
 
