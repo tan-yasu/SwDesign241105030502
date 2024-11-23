@@ -21,12 +21,23 @@ Tất cả các hành động này được thực hiện trực tiếp thông q
 
 
  Use Case: Calculate Salary
+
+
+
+
+
+ 
 ![Diagram](http://www.plantuml.com/plantuml/png/RT312i8m30RWUvyYzBuNy20JHV6aE5yWT9aMicwawQ68x-va3b7QKmaVVtvIHqNHrBD1fuE0FMEMWHbENUSTYGMCozy8ESLmO_go9aUbtiB3mFHI98UHmEv9tHsklYU7qi8E5Usls8mZPsYGKJ9S4bFy0mSA9AYqc3dZQSod3LJLkhm8Ld0CNZqgmHRP9KRrGp1bFCMKsvI6iovNgocqxqE-0000)
 
 
 
 Payroll Officer bắt đầu quá trình tính toán lương.
 Hệ thống truy xuất dữ liệu từ bảng chấm công, áp dụng quy tắc tính lương, và tạo dữ liệu lương cuối cùng.
+
+
+
+
+
  Use Case: Generate Paycheck
 
 
@@ -39,11 +50,20 @@ Phiếu lương được gửi trực tiếp đến ngân hàng để xử lý t
 
 
  Use Case: Manage Timecard
+
+
+
+ 
 ![Diagram](http://www.plantuml.com/plantuml/png/ROz12i9034NtESLdzhs02waBmQLOBn3R88LCfsHIOH3lxaWtIbtclIIVtsPdyoKgSU_948vnrbH40ZYZ3cJIEqzt5OGp5qkgw4fsYG5F0e0bIy-vwcwvnT5n7MC5DeHVUvXdIm_vqY-Y6e2csV-vtP1rR_C5EvmkM34hjJ8DdpPl)
 
 
 Employee gửi bảng chấm công cho hệ thống.
 Hệ thống chuyển dữ liệu bảng chấm công đến bộ phận HR để phê duyệt.
+
+
+
+
+
  Use Case: Process Payment
 
 
