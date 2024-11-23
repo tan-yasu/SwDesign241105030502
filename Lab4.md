@@ -67,7 +67,7 @@ Hệ thống chuyển dữ liệu bảng chấm công đến bộ phận HR đ�
 
 
  
-![Diagram](http://www.plantuml.com/plantuml/png/RP312i8m38RlUOgm-rx0WmmLF2eCpn9g9hAjaoGx3F7TxSg23jnbQRylVzDMQYGszXrGi46mEDCaGzVXgMaUWQL0KgzTsL5iiPxKkCzuNWCyARHqvs-26o_0z8tAWJJX8qSMCiRazHmD3sIKSoxxgyDrIytnzbUV0Rm1bW6)
+![Diagram](http://www.plantuml.com/plantuml/png/RP1Foy8m38Vl-HIXzts1z_0oLF2eC3rBg9d8jaxIx334xsvR5dHWBqtxFFdrJnsLHAUX1_8w2heZpJBsFHxQzkvP75AqsfGDXGwREIeF1USrm8DyHpV-99Zn14nZYkmf9hpdm4BAcBo1W-AEb4hEUNink6vfE5n_wXd02s2v85RL_ohbgpPMMfQvx9NN_A4x2ONOijX13kgav9zv0m00)
 
 Payroll Officer kích hoạt quá trình xử lý thanh toán.
 Hệ thống tạo dữ liệu thanh toán và gửi đến ngân hàng thông qua tích hợp hệ thống.
