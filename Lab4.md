@@ -12,6 +12,14 @@ HR Manager thực hiện thêm, cập nhật, hoặc xóa thông tin nhân viên
 Tất cả các hành động này được thực hiện trực tiếp thông qua hệ thống "Payroll System".
 
 
+
+
+
+
+
+
+
+
  Use Case: Calculate Salary
 ![Diagram](http://www.plantuml.com/plantuml/png/RT312i8m30RWUvyYzBuNy20JHV6aE5yWT9aMicwawQ68x-va3b7QKmaVVtvIHqNHrBD1fuE0FMEMWHbENUSTYGMCozy8ESLmO_go9aUbtiB3mFHI98UHmEv9tHsklYU7qi8E5Usls8mZPsYGKJ9S4bFy0mSA9AYqc3dZQSod3LJLkhm8Ld0CNZqgmHRP9KRrGp1bFCMKsvI6iovNgocqxqE-0000)
 
