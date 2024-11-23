@@ -4,8 +4,7 @@ I Thiết kế biểu đồ ca sử dụng (Use Case Diagram)
 
 ![Diagram](http://www.plantuml.com/plantuml/png/TPBBJiCm44Nt_efHzn5gIxj021Kg12mGLKe_OEfCMwj-XB6pY13_JfmcZi8ZgoJdwCxesYiVa4Dbj40P7CFaqPJQrKGJG0zaolx_SmwlQF58t98Jzs23DJkjuUrmKBAZhdrFoWFQCsnh7yYqUDzy2y4a0zgZffIHd4y1pLDvakWRV1aC_MgGatHS-3PhjvwEvJLgMMaC15lKo7LdpSRM4rdYA3MZvOdakTFcVqv-LuOaSj59rsDfmqwIzp7Aa0sTjFXdO4wbuz0llnHVGf0f8SlkOZBSm6HRxOqAmr1nuWvF8xulYgjTMSIiT5ZYqdZlpQBtObLGGm_G5wES_UdFe_-x4X59DEA1jPkHBKPu0RTPbl3QsODYaueO5bz6dDD7HJwa1iIgYOjNxni0)
  Use Case: Manage Employee Records
-![Diagram](http://www.plantuml.com/plantuml/png/TSzD2i8m4CNnVKunPDyhI5q8sGWIyG13ykWc7oKp5O9uT-kYe1PdEJ_umnj5kUcIa-6WjP5rdivSU4Apn4BEcuQWNAO4iXVkhQP4rowAREbXQBr545XMFiP8fpodsW7xJRSvikAVUkHw_zIdCSxJC1n-ejjtrzjWdnfHudl)
-
+![Diagram](//www.plantuml.com/plantuml/png/POz12i8m44NtSufFzhs2L4JeHf18rp8qWmkJfYIf4CIx6msbbCxkFzwVOTgOEAJPMU8X-G3LQLnuv8S41OxeD4qyF4k6kd8EtbhSSapY5Dw4CdEKWQD07Ot1sKtMPv5_jp_T2zjA_MGuoSwhUAjgSVwrLokc3r6dqJI7vSoQwh8LB9LMHlFxz0i0)
 
 
 HR Manager thực hiện thêm, cập nhật, hoặc xóa thông tin nhân viên.
