@@ -1,7 +1,6 @@
 I.biểu đồ hệ thống con (Subsystem Design) cho hệ thống Payroll System dựa vào kết quả phân tích trong Lab 4.
 
 
-![Diagram](http://www.plantuml.com/plantuml/png/encoded-diagram-text)
 
 
 
@@ -138,7 +137,7 @@ PaymentTransaction lưu chi tiết giao dịch thanh toán, bao gồm số tiề
 
 
 
-
+![Diagram](http://www.plantuml.com/plantuml/png/RP312i8m343l_OhGaoBx0G-oWoBUnFa3TOOnx9gIPeSY-tUThU3SSdplqT2KGGnBtrdbJVqm3OA-e2SMEA93DjAIWwg_XHW4EmrF1U-fhGdXM-QGEDaq6sWInaFdBKN45A_M2ydPH2Ph9yKmN_JxVW7yOQSzRA4IRbqpSzVeS)
  
 ![Diagram](http://www.plantuml.com/plantuml/png/RP312i8m343l_OhGaoBx0G-oWoBUnFa3TOOnx9gIPeSY-tUThU3SSdplqT2KGGnBtrdbJVqm3OA-e2SMEA93DjAIWwg_XHW4EmrF1U-fhGdXM-QGEDaq6sWInaFdBKN45A_M2ydPH2Ph9yKmN_JxVW7yOQSzRA4IRbq)
 
