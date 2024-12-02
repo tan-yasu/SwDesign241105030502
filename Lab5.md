@@ -136,10 +136,7 @@ PaymentTransaction lưu chi tiết giao dịch thanh toán, bao gồm số tiề
 5. Report Generation Subsystem
 
 
-
-![Diagram](http://www.plantuml.com/plantuml/png/RP312i8m343l_OhGaoBx0G-oWoBUnFa3TOOnx9gIPeSY-tUThU3SSdplqT2KGGnBtrdbJVqm3OA-e2SMEA93DjAIWwg_XHW4EmrF1U-fhGdXM-QGEDaq6sWInaFdBKN45A_M2ydPH2Ph9yKmN_JxVW7yOQSzRA4IRbqpSzVeS)
- 
-![Diagram](http://www.plantuml.com/plantuml/png/RP312i8m343l_OhGaoBx0G-oWoBUnFa3TOOnx9gIPeSY-tUThU3SSdplqT2KGGnBtrdbJVqm3OA-e2SMEA93DjAIWwg_XHW4EmrF1U-fhGdXM-QGEDaq6sWInaFdBKN45A_M2ydPH2Ph9yKmN_JxVW7yOQSzRA4IRbq)
+![Diagram](http://www.plantuml.com/plantuml/png/RP112i8m44NtESMGbIAzG1VIXIBkn7g1s0wbc6R2P2e4wTsrfWkbcULx3pv95SImZ8DLtZGFqo7eAtfYWHCwP2CzEQZ7UuX1SD3mKl2vnfeG88LBHpoxvNRG9Oh7mLkAYAdTRA649_LjfhoOo6HjBfnMepzR1V0NdGzGGYtSksxbRj5ZpZRa19tygRIsUbnHx1ERQxrmr6fI5Rfs_i0t)
 
 
 
