@@ -92,7 +92,7 @@
 
 6.2: States
 
-![Diagram](http://www.plantuml.com/plantuml/png/FOwn2W8n38RtF4NeADmBECWvYBkhE5IIWq1jIfghFhxKIhUFvFlWNwj7y_sLu7vuuBASyCgPBJeJJFhTRzo4tqnun30OYJrAgW7chuldKapR4F-CcngIL3TvxYwQ0qoh9vTFKVEH34PNt2HnW9Kp)
+![Diagram](http//www.plantuml.com/plantuml/png/FOwn2W8n38RtF4NeADmBECWvYBkhE5IIWq1jIfghFhxKIhUFvFlWNwj7y_sLu7vuuBASyCgPBJeJJFhTRzo4tqnun30OYJrAgW7chuldKapR4F-CcngIL3TvxYwQ0qoh9vTFKVEH34PNt2HnW9KpzNrV)
 
 6.3: Attributes
 
