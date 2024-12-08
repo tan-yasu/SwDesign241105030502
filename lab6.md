@@ -91,8 +91,8 @@
 ![Diagram](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuKhEIImkLWX8h4pEI4tETa_DIorABCalKgZcKW02ROLqY4WgJ8L6Qcv1JdvbQgg2bO8hbAcZK9oOarXKwP9QafYPKmoK2KRcQm85ODgXfgPM5EGNbS3DB80oa1I2D9NbPwPmrN8vfEQbW9mA0000)
 
 6.2: States
+![Diagram](http://www.plantuml.com/plantuml/png/HOwn2W8n38RtFaNeADmBECWvYAkuYaEu_cgnjYKNJtrxgIcuVUJxI3BEogBFHtAdrPc6OKDxP0Wh0gt97_WptJ3TQHAqcNT_tU8ZbeYNjSOKe1pJx5rt5cvhbR9OQCo9hiBvjxHRItVlMgJVDoOjT8a9tet8eJtx1G00)
 
-![Diagram](http//www.plantuml.com/plantuml/png/FOwn2W8n38RtF4NeADmBECWvYBkhE5IIWq1jIfghFhxKIhUFvFlWNwj7y_sLu7vuuBASyCgPBJeJJFhTRzo4tqnun30OYJrAgW7chuldKapR4F-CcngIL3TvxYwQ0qoh9vTFKVEH34PNt2HnW9KpzNrV)
 
 6.3: Attributes
 
